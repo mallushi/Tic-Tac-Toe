@@ -13,9 +13,32 @@
     </header>
     <section>
         <div class="container">
-            <h2 class="turn"></h2>
-            <div class="board"></div>
+            <button id="play">New Game</button>
+            <div class="gameboard"></div>
         </div>
+        <dialog  id="dialog">
+            <h2>Select Players</h2>
+            <form id="playerNames">
+                <div class="container">
+                    <div class="containers">
+                        <label for="player1Name">PLayer 1 name:</label>
+                        <input type="text" id="player1Name" name="player1Name" required><br>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="containers">
+                        <label for="player2Name">PLayer 2 name:</label>
+                        <input type="text" id="player2Name" name="player2Name" required><br>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Save">
+                </div>
+                <div class="cancel">
+                    <button id="hide">Close</button>
+                </div>
+            </form>
+        </dialog>
     </section>
    <footer>
     <a href="https://github.com/mallushi">Migena Allushi</a>
